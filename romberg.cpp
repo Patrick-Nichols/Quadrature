@@ -94,9 +94,6 @@ double adaptive_integration2(const double& a, const double& b, size_t& ns,Func_t
             fprintf(stderr,"dx = %15.6le ns = %12lu err= %20.10le\n",dx,np,rel_err);
             return int2;
     }
-//    fprintf(stdout,"a = %10.5le b = %10.5le ",a,b); 
-//   fprintf(stderr,"int2 = %20.10le int1 = %20.10le err = %20.10le npts = %12lu\n",
-//            int2,int1,rel_err,np);
     double dh = (b-a)*0.25;
     double rel_err_;
     size_t nsum = 0;
